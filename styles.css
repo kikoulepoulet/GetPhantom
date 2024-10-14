@@ -1,0 +1,129 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background: #121212;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #4caf50;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #4caf50;
+}
+
+.dark-section {
+    background-color: #2a2a2a;
+}
+
+/* Buttons */
+.btn, .btn-outline {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #4caf50;
+    color: #4caf50;
+}
+
+.btn:hover, .btn-outline:hover {
+    background-color: #fff;
+    color: #4caf50;
+}
+
+/* Footer */
+footer {
+    background-color: #121212;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .btn, .btn-outline {
+        padding: 0.6rem 1.5rem;
+    }
+}
