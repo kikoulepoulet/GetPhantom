@@ -1,4 +1,8 @@
 /* Global styles */
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -80,7 +84,7 @@ h2 {
     border-radius: 30px;
     text-align: center;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
     cursor: pointer;
 }
 
@@ -97,8 +101,19 @@ h2 {
 }
 
 .btn:hover, .btn-outline:hover {
+    transform: scale(1.05);
     background-color: #fff;
     color: #4caf50;
+}
+
+/* Testimonials */
+blockquote {
+    font-style: italic;
+    color: #fff;
+    background: #333;
+    padding: 1.5rem;
+    border-left: 5px solid #4caf50;
+    margin: 1.5rem 0;
 }
 
 /* Footer */
@@ -110,6 +125,22 @@ footer {
 
 footer p {
     color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /* Responsive Design */
@@ -125,5 +156,13 @@ footer p {
 
     .btn, .btn-outline {
         padding: 0.6rem 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 0 1rem;
     }
 }
