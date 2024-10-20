@@ -25,17 +25,6 @@
             </nav>
         </div>
     </header>
-    <script>
-        // Smooth scrolling for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>    
 
     <section id="home" class="section">
         <div class="container">
@@ -44,17 +33,6 @@
             <a href="#download" class="btn">Get Started</a>
         </div>
     </section>
-    <script>
-        // Smooth scrolling for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>   
 
     <section id="download" class="section dark-section">
         <div class="container">
@@ -95,8 +73,8 @@
             <h2>Script Hub</h2>
             <p>Check out these popular scripts for use with Phantom:</p>
             <ul>
-                <li><a href="https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"target="_blank">Infinite yield</a></li>
-                <li><a href="https://pastebin.com/raw/0gDUjVQD"target="_blank">Dex.lua</a></li>
+                <li><a href="https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source" target="_blank">Infinite yield</a></li>
+                <li><a href="https://pastebin.com/raw/0gDUjVQD" target="_blank">Dex.lua</a></li>
             </ul>
         </div>
     </section>
@@ -116,9 +94,22 @@
         </div>
     </section>
 
+    <!-- New Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2>What Users Say</h2>
+            <blockquote>"Phantom Executor is incredibly easy to use and opens up so many possibilities!" - AcesHigh</blockquote>
+            <blockquote>"I can't imagine Roblox without Phantom!" - nightcrawler</blockquote>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <p>&copy; 2024 Phantom Executor. All rights reserved.</p>
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms-of-service">Terms of Service</a></li>
+            </ul>
         </div>
     </footer>
 
